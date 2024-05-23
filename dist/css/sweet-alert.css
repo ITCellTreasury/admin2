@@ -88,7 +88,35 @@ swal2-confirm swal2-styled{
     margin: 26px 5px 0 5px!important;
     cursor: pointer!important;
 }
+div:where(.swal2-container) button:where(.swal2-confirm btn btn-success {
+     
+    background-color: #55dd98!important;  
+    color: white!important;
+    border: none!important;
+    box-shadow: none!important;
+    font-size: 17px!important;
+    font-weight: 500!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 5px!important;
+    padding: 10px 32px!important;
+    margin: 26px 5px 0 5px!important;
+    cursor: pointer!important;
+}
  div:where(.swal2-container) button:where(.swal2-danger {
+     
+    background-color: #dd5555!important;  
+    color: white!important;
+    border: none!important;
+    box-shadow: none!important;
+    font-size: 17px!important;
+    font-weight: 500!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 5px!important;
+    padding: 10px 32px!important;
+    margin: 26px 5px 0 5px!important;
+    cursor: pointer!important;
+}
+div:where(.swal2-container) button:where(.swal2-cancel btn btn-danger {
      
     background-color: #dd5555!important;  
     color: white!important;
