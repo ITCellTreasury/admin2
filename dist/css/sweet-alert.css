@@ -1,7 +1,107 @@
 body.stop-scrolling {
   height: 100%;
   overflow: hidden; }
-
+           select.form-control{
+    -webkit-appearance: menulist!important;
+    -moz-appearance: menulist!important;
+    -ms-appearance: menulist!important;
+    -o-appearance: menulist!important;
+    appearance: menulist!important;
+     }
+     swal2-confirm swal2-styled{
+    background-color: #8CD4F5!important;
+    color: white!important;
+    border: none!important;
+    box-shadow: none!important;
+    font-size: 17px!important;
+    font-weight: 500!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 5px!important;
+    padding: 10px 32px!important;
+    margin: 26px 5px 0 5px!important;
+    cursor: pointer!important;
+      }
+      div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    background-color: #8CD4F5!important;
+    color: white!important;
+    border: none!important;
+    box-shadow: none!important;
+    font-size: 17px!important;
+    font-weight: 500!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 5px!important;
+    padding: 10px 32px!important;
+    margin: 26px 5px 0 5px!important;
+    cursor: pointer!important;
+}
+swal2-confirm swal2-styled{
+    background-color: #8CD4F5!important;
+    color: white!important;
+    border: none!important;
+    box-shadow: none!important;
+    font-size: 17px!important;
+    font-weight: 500!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 5px!important;
+    padding: 10px 32px!important;
+    margin: 26px 5px 0 5px!important;
+    cursor: pointer!important;
+      }
+      div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {
+    background-color:  #C1C1C1!important;
+    color: white!important;
+    border: none!important;
+    box-shadow: none!important;
+    font-size: 17px!important;
+    font-weight: 500!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 5px!important;
+    padding: 10px 32px!important;
+    margin: 26px 5px 0 5px!important;
+    cursor: pointer!important;
+}
+  div:where(.swal2-container) button:where(.swal2-styled).swal2-deny {
+     
+    background-color: rgb(221, 107, 85)!important;  
+    color: white!important;
+    border: none!important;
+    box-shadow: none!important;
+    font-size: 17px!important;
+    font-weight: 500!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 5px!important;
+    padding: 10px 32px!important;
+    margin: 26px 5px 0 5px!important;
+    cursor: pointer!important;
+}
+ div:where(.swal2-container) button:where(.swal2-success {
+     
+    background-color: #55dd98!important;  
+    color: white!important;
+    border: none!important;
+    box-shadow: none!important;
+    font-size: 17px!important;
+    font-weight: 500!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 5px!important;
+    padding: 10px 32px!important;
+    margin: 26px 5px 0 5px!important;
+    cursor: pointer!important;
+}
+ div:where(.swal2-container) button:where(.swal2-danger {
+     
+    background-color: #dd5555!important;  
+    color: white!important;
+    border: none!important;
+    box-shadow: none!important;
+    font-size: 17px!important;
+    font-weight: 500!important;
+    -webkit-border-radius: 4px!important;
+    border-radius: 5px!important;
+    padding: 10px 32px!important;
+    margin: 26px 5px 0 5px!important;
+    cursor: pointer!important;
+}
 .sweet-overlay {
   background-color: black;
   /* IE8 */
