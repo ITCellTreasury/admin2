@@ -424,7 +424,7 @@ figcaption{background-color:rgba(29,33,41,.5);font:italic 400 12px/0 menlo,conso
 .header #header-widget{flex:0 0 auto;display:flex;align-items:center;height:100%;width:173px;/* padding:0 0 0 23px;*/ overflow:hidden;color: #fff;}
 .header .widget{margin:auto 0;background-repeat:no-repeat;background-size:100%;background-position:center}
 .header .header-inner img{max-width:142px;max-height:47px}
-.header .header-inner h1, #header-widget .header-inner h2{max-width:152px;font-size:18px;color:inherit;overflow:hidden;white-space:nowrap;/*text-overflow:ellipsis;*/font-family:'objektiv-mk1', sans-serif;}
+.header .header-inner h1, #header-widget .header-inner h2{margin:0px;max-width:152px;font-size:18px;color:inherit;overflow:hidden;white-space:nowrap;/*text-overflow:ellipsis;*/font-family:'objektiv-mk1', sans-serif;}
 .header .header-inner a{color:inherit;-webkit-transition:none;transition:none}
 .header-inner h2::first-letter, .header-inner h1::first-letter{color:#4CAF50}
 .header-inner h2 a:after, .header-inner h1:after{content:'*';margin-left:1.5px;font-size:10px;opacity:.5;}
