@@ -1378,7 +1378,7 @@ a.download:before{display:inline-block;vertical-align: sub;}
 :target::before{height:20px;margin-top:-20px}
 .header{padding:0 20px;position:absolute;}
 .header .header-inner h1, #header-widget .header-inner h2{font-size:16px}
-.header #header-widget{width:auto;max-width:220px}
+.header #header-widget{margin:0px;width:auto;max-width:220px}
 .header .searchbar{position:fixed;top:0;left:0;width:100%;height:auto;max-width:none;padding:0 20px;z-index:10}
 .header .searchbar input[type=text]{background-color:#fefefe;margin-top:-100px;padding:20px 20px 20px 55px;width:100%;z-index:3;border-radius:50px;-webkit-transition:all .3s ease;transition:all .3s ease}
 .header .searchbar .search-button{top:-100px;left:20px;padding-top:20px;z-index:4;-webkit-transition:all .3s ease;transition:all .3s ease}
