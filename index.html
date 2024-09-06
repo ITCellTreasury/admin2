@@ -248,6 +248,28 @@
       }
     })
   })
+    </script>
+    <script>
+  (function() {
+  var idleDurationSecs = 60;
+  var redirectUrl = 'https://itcelltreasury.blogspot.com/';  // Redirect idle users to this URL
+  var idleTimeout;
+
+  var resetIdleTimeout = function() {
+    if(idleTimeout) clearTimeout(idleTimeout);
+
+    idleTimeout = setTimeout(function(){
+      location.href = redirectUrl
+    }, idleDurationSecs * 1000);
+  };
+
+  resetIdleTimeout();
+
+  ['click', 'touchstart', 'mousemove'].forEach(function(evt) {
+    document.addEventListener(evt, resetIdleTimeout, false)
+  });
+})();
+
 </script>
     
   </body>
