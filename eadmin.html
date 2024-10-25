@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'; object-src 'self';">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>eAdmin | IT Cell Treasury</title>
-    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+
     <style>
-      .body {
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-    </style>
+        html, body, iframe { height: 100%; }
+        iframe {
+            position: absolute;
+            height: 98%;
+            width: 99%;
+            border: none;
+        }
+        
+        html{overflow:hidden!important;}
+
+        </style>
+
   </head>
-  <body class="hold-transition skin-green-light sidebar-mini">
+  <body  oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
     
- <iframe  src="https://script.google.com/macros/s/AKfycbyat751lEZANaBmwamQIxPb4Lx8nvr1oU93a_B6OWx6DcOArtbrrEzdGWoWMpZeZa_k/exec" class="pendingframe" id="pendingframe" title="" name="table02" onload="window.parent.scrollTo(0,0)" allowtransparency="true" allowfullscreen="false" allow="geolocation; microphone; camera"  frameborder="0" style="min-width: 99vw; height: 95vh; border: none; display: block;" scrolling="no">  
-</iframe> 
-   
+ <iframe  src="https://script.google.com/macros/s/AKfycbyat751lEZANaBmwamQIxPb4Lx8nvr1oU93a_B6OWx6DcOArtbrrEzdGWoWMpZeZa_k/exec" frameborder="0" height="595" width="1352" allowfullscreen="" align="center" id="iframe">
+  </iframe>
+   <script>
+    iframe.width  = iframe.contentWindow.document.body.scrollWidth;
+    iframe.height = iframe.contentWindow.document.body.scrollHeight;   
+</script>
   </body>
 </html>
