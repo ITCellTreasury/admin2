@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Currency Denomination Arranger</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    input[type="number"] { padding: 8px; width: 200px; margin-bottom: 10px; }
+    button { padding: 10px 15px; font-size: 16px; }
+    table { margin-top: 20px; width: 100%; border-collapse: collapse; }
+    th, td { padding: 10px; border: 1px solid #ddd; text-align: center; }
+    th { background-color: #f4f4f4; }
+  </style>
+</head>
+<body>
+
+<h2>Indian Currency Denomination Arranger</h2>
+
+<form id="currencyForm">
+  <label for="amount">Enter Amount (INR):</label>
+  <input type="number" id="amount" name="amount" min="0" required>
+  <button type="submit">Arrange Currency</button>
+</form>
+
+<div id="results"></div>
+
+<script>
+  document.getElementById("currencyForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    const amount = parseInt(document.getElementById("amount").value);
+    const denominations = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
+    let remainingAmount = amount;
+    let result = `<h3>Arrangement for INR ${amount}:</h3>`;
+    
+    result += `
+      <table>
+        <thead>
+          <tr>
+            <th>Denomination (₹)</th>
+            <th>Notes Required</th>
+            <th>Bundles (100 notes each)</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+
+    for (let denom of denominations) {
+      const count = Math.floor(remainingAmount / denom);
+      if (count > 0) {
+        const bundles = Math.floor(count / 100); // Calculate number of bundles
+        const remainingNotes = count % 100; // Calculate notes left after bundles
+        result += `
+          <tr>
+            <td>₹${denom}</td>
+            <td>${count}</td>
+            <td>${bundles} bundle${bundles !== 1 ? 's' : ''} ${remainingNotes > 0 ? `+ ${remainingNotes} notes` : ''}</td>
+          </tr>
+        `;
+        remainingAmount %= denom;
+      }
+    }
+
+    result += `
+        </tbody>
+      </table>
+    `;
+    
+    document.getElementById("results").innerHTML = result;
+  });
+</script>
+
+</body>
+</html>
